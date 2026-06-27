@@ -57,18 +57,19 @@ Once Pages is live, each project has its own URL:
 - Electronics: `https://<your-username>.github.io/<repo-name>/electronics/`
 - Metromont: `https://<your-username>.github.io/<repo-name>/metromont/`
 
-**Heads up on the Metromont page:** it only uses wording already on your resume (no new technical detail was added), but it's still a public page about your employer's process. Hold off pushing/linking that one until you've actually gotten the okay tomorrow — easiest way is to just leave the `metromont/` folder out of your initial commit, or delete the card linking to it from `index.html`, until you're cleared. The same goes for the two Metromont photos below — only add real photos once you've confirmed it's fine to post them publicly.
+**Heads up on the Metromont page:** it only uses wording already on your resume (no new technical detail was added), but it's still a public page about your employer's process. Hold off pushing/linking that one until you've actually gotten the okay tomorrow — easiest way is to just leave the `metromont/` folder out of your initial commit, or delete the card linking to it from `index.html`, until you're cleared.
 
 ## 5. Adding photos
 
-Every gallery is live by default — no commenting/uncommenting HTML required. Just drop image files at the exact paths below (filenames matter, case-sensitive) and they'll appear next time the page loads:
+Every gallery is live by default now — no commenting/uncommenting HTML required. Just drop image files at the exact paths below (filenames matter, case-sensitive) and they'll appear next time the page loads:
 
 | Photo | Save as |
 |---|---|
+| Profile picture (shows in the header on every page) | `assets/img/profile.jpg` |
+| UGA Arch (banner — shows in the hero on every page) | `assets/img/banner-arch.jpg` |
 | Go-kart — starting condition | `assets/img/gokart/before.jpg` |
 | Go-kart — after the rebuild | `assets/img/gokart/after.jpg` |
 | Motorized bicycle | `assets/img/bicycle/1.jpg` |
-| UGA Arch (homepage banner) | `assets/img/banner-arch.jpg` |
 | Electronics repair (optional, 2 slots) | `assets/img/electronics/1.jpg`, `assets/img/electronics/2.jpg` |
 | Metromont — in-house cost-reduction tool | `assets/img/metromont/cost-reduction-tool.jpg` |
 | Metromont — emergency-designed replacement part | `assets/img/metromont/emergency-design.jpg` |

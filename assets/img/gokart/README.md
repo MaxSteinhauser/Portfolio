@@ -1,1 +1,1 @@
-Put your gokart project photos in this folder (e.g. 1.jpg, 2.jpg), then uncomment the Gallery block in ../../gokart/index.html.
+Put two photos here: `before.jpg` (starting condition) and `after.jpg` (after the rebuild). The Before/After section on the Go-Kart page is live by default — it'll pick them up automatically, no HTML edits needed.

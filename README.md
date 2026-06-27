@@ -57,19 +57,36 @@ Once Pages is live, each project has its own URL:
 - Electronics: `https://<your-username>.github.io/<repo-name>/electronics/`
 - Metromont: `https://<your-username>.github.io/<repo-name>/metromont/`
 
-**Heads up on the Metromont page:** it only uses wording already on your resume (no new technical detail was added), but it's still a public page about your employer's process. Hold off pushing/linking that one until you've actually gotten the okay tomorrow — easiest way is to just leave the `metromont/` folder out of your initial commit, or delete the card linking to it from `index.html`, until you're cleared.
+**Heads up on the Metromont page:** it only uses wording already on your resume (no new technical detail was added), but it's still a public page about your employer's process. Hold off pushing/linking that one until you've actually gotten the okay tomorrow — easiest way is to just leave the `metromont/` folder out of your initial commit, or delete the card linking to it from `index.html`, until you're cleared. The same goes for the two Metromont photos below — only add real photos once you've confirmed it's fine to post them publicly.
 
 ## 5. Adding photos
 
-The Go-Kart and Bicycle pages, and the homepage banner, are already wired up for the photos you shared in chat — you just need to save those image files to these exact paths (filenames matter, case-sensitive):
+Every gallery is live by default — no commenting/uncommenting HTML required. Just drop image files at the exact paths below (filenames matter, case-sensitive) and they'll appear next time the page loads:
 
 | Photo | Save as |
 |---|---|
-| Go-kart, front 3/4 view (engine/cage visible, red wheelbarrow behind) | `assets/img/gokart/1.jpg` |
-| Go-kart, rear/side view (roll cage, engine underneath) | `assets/img/gokart/2.jpg` |
-| Motorized bicycle (Diamondback frame, engine mid-frame) | `assets/img/bicycle/1.jpg` |
+| Go-kart — starting condition | `assets/img/gokart/before.jpg` |
+| Go-kart — after the rebuild | `assets/img/gokart/after.jpg` |
+| Motorized bicycle | `assets/img/bicycle/1.jpg` |
 | UGA Arch (homepage banner) | `assets/img/banner-arch.jpg` |
+| Electronics repair (optional, 2 slots) | `assets/img/electronics/1.jpg`, `assets/img/electronics/2.jpg` |
+| Metromont — in-house cost-reduction tool | `assets/img/metromont/cost-reduction-tool.jpg` |
+| Metromont — emergency-designed replacement part | `assets/img/metromont/emergency-design.jpg` |
 
-Once those 4 files are in place, the Go-Kart gallery, Bicycle gallery, and the homepage hero banner all go live automatically — no HTML edits needed.
+The Go-Kart page renders its two photos as a labeled **Before / After** comparison rather than a plain gallery.
 
-For Electronics or Metromont, or any future photos, follow the same pattern for any project on
+Until a given image file actually exists at its path, the browser shows a broken-image icon with the alt text in its place — that's expected and harmless, it disappears the moment you add the real file.
+
+For any other project, just save files into `assets/img/<project>/` matching the `src` paths already in that page's `index.html`.
+
+## 6. Linking from your resume
+
+Once you have the real URL, wrap each project title in `Max_Steinhauser_Resume.tex` with `\href`, for example:
+
+```latex
+\resumeSubheading
+    {\href{https://<your-username>.github.io/<repo-name>/gokart/}{Go-Kart Rebuild and Mechanical Integration}}{}
+    {Personal Project}{}
+```
+
+Do this for each of the four `\resumeSubheading` project entries, swapping in that project's URL.

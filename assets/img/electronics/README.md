@@ -1,1 +1,1 @@
-Put your electronics project photos in this folder (e.g. 1.jpg, 2.jpg), then uncomment the Gallery block in ../../electronics/index.html.
+Put your electronics project photos here as `1.jpg` and `2.jpg`. The gallery is live by default — it'll pick them up automatically, no HTML edits needed.

@@ -1,1 +1,1 @@
-Put your bicycle project photos in this folder (e.g. 1.jpg, 2.jpg), then uncomment the Gallery block in ../../bicycle/index.html.
+Put your bicycle project photo here as `1.jpg`. The gallery is live by default — it'll pick it up automatically, no HTML edits needed.

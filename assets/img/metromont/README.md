@@ -1,1 +1,1 @@
-Put your metromont project photos in this folder (e.g. 1.jpg, 2.jpg), then uncomment the Gallery block in ../../metromont/index.html.
+Put two photos here: `cost-reduction-tool.jpg` (the in-house fabrication tool) and `emergency-design.jpg` (the replacement form component designed under the 1-hour deadline). The gallery is live by default — it'll pick them up automatically, no HTML edits needed.

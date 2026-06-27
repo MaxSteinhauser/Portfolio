@@ -165,6 +165,32 @@ nav a:hover { color: var(--accent); }
   border: 1px solid var(--border);
 }
 
+/* Before / After comparison */
+.before-after {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+  margin-top: 12px;
+}
+.before-after figure { margin: 0; }
+.before-after img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  display: block;
+}
+.before-after figcaption {
+  text-align: center;
+  margin-top: 8px;
+  font-weight: 600;
+  font-size: 0.8rem;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
 .back-link {
   display: inline-block;
   margin-top: 32px;

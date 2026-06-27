@@ -59,6 +59,19 @@ nav a:hover { color: var(--accent); }
 .hero h1 { font-size: 2.2rem; margin: 0 0 8px; }
 .hero p { color: var(--muted); font-size: 1.1rem; max-width: 600px; }
 
+/* Hero with a photo banner (e.g. homepage UGA Arch shot) */
+.hero.has-banner {
+  background-image: linear-gradient(180deg, rgba(15,23,42,0.6), rgba(15,23,42,0.7)), url('../img/banner-arch.jpg');
+  background-size: cover;
+  background-position: center;
+  background-color: var(--bg-alt);
+  color: #fff;
+  padding: 96px 0;
+}
+.hero.has-banner h1 { color: #fff; }
+.hero.has-banner p { color: #e2e8f0; }
+.hero.has-banner .eyebrow { color: #93c5fd; }
+
 .eyebrow {
   text-transform: uppercase;
   letter-spacing: 0.08em;

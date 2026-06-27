@@ -11,7 +11,7 @@ gokart/index.html        Go-Kart Rebuild and Mechanical Integration
 bicycle/index.html       Motorized Bicycle Conversion
 electronics/index.html   Electronics Repair
 metromont/index.html     Manufacturing Engineer Intern — Metromont
-assets/css/style.css     shared styling for every page
+assets/css/site.css      shared styling for every page
 assets/img/<project>/    drop that project's photos here
 ```
 
@@ -61,23 +61,15 @@ Once Pages is live, each project has its own URL:
 
 ## 5. Adding photos
 
-For any project once you have photos:
+The Go-Kart and Bicycle pages, and the homepage banner, are already wired up for the photos you shared in chat — you just need to save those image files to these exact paths (filenames matter, case-sensitive):
 
-1. Drop the image files into `assets/img/<project>/` (e.g. `assets/img/gokart/1.jpg`)
-2. Open that project's `index.html`
-3. Find the commented-out `<!-- Photo gallery ... -->` block and delete the `<!--` and `-->` around it
-4. Update the `src` paths/filenames to match what you added
+| Photo | Save as |
+|---|---|
+| Go-kart, front 3/4 view (engine/cage visible, red wheelbarrow behind) | `assets/img/gokart/1.jpg` |
+| Go-kart, rear/side view (roll cage, engine underneath) | `assets/img/gokart/2.jpg` |
+| Motorized bicycle (Diamondback frame, engine mid-frame) | `assets/img/bicycle/1.jpg` |
+| UGA Arch (homepage banner) | `assets/img/banner-arch.jpg` |
 
-Pages with no photos yet just skip that section cleanly — nothing broken or empty-looking.
+Once those 4 files are in place, the Go-Kart gallery, Bicycle gallery, and the homepage hero banner all go live automatically — no HTML edits needed.
 
-## 6. Linking from your resume
-
-Once you have the real URL, wrap each project title in `Max_Steinhauser_Resume.tex` with `\href`, for example:
-
-```latex
-\resumeSubheading
-    {\href{https://<your-username>.github.io/<repo-name>/gokart/}{Go-Kart Rebuild and Mechanical Integration}}{}
-    {Personal Project}{}
-```
-
-Do this for each of the four `\resumeSubheading` project entries, swapping in that project's URL.
+For Electronics or Metromont, or any future photos, follow the same pattern for any project on

@@ -63,8 +63,9 @@ Once Pages is live, each project has its own URL:
 
 Every gallery is live by default now — no commenting/uncommenting HTML required. Just drop image files at the exact paths below (filenames matter, case-sensitive) and they'll appear next time the page loads:
 
-| Photo | Save as |
+| File | Save as |
 |---|---|
+| Resume PDF (linked from the "Resume" button in the header on every page) | `assets/Max_Steinhauser_Resume.pdf` |
 | Profile picture (shows in the header on every page) | `assets/img/profile.jpg` |
 | UGA Arch (banner — shows in the hero on every page) | `assets/img/banner-arch.jpg` |
 | Go-kart — starting condition | `assets/img/gokart/before.jpg` |
